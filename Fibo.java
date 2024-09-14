@@ -4,7 +4,8 @@ import java.util.ArrayList;
 public class App {
     public static void main(String[] args) throws Exception {
         // Colocar una variable como hardcode
-        int n = 1;
+        // TODO: Agregar una entrada de datos con restricciones
+        int n = 10;
 
         // Declarar la variable de la serie
         int serie[] = new int[n];
@@ -24,7 +25,14 @@ public class App {
         for(int j = 2; j < n; j++)
             fibo.add(fibo.get(j-1) + fibo.get(j-2));
 
+        // Se puede mostrar toda la serie
         for(int tmp :fibo)
-        System.out.print(tmp + ", ");
+            System.out.print(tmp + ", ");
+        // Colocar un salto de línea
+        System.out.println("");
+        // O solamente mostrar lo que pide
+        // el usuario
+        for(int k = 0; k < n; k++)
+            System.out.print(fibo.get(k) + ", ");
     }
 }
