@@ -5,7 +5,17 @@ public class App {
     public static void main(String[] args) throws Exception {
         // Colocar una variable como hardcode
         // TODO: Agregar una entrada de datos con restricciones
-        int n = 10;
+        // int n = 30;
+        Scanner felipe = new Scanner(System.in);
+
+        System.out.println("Ingrésamelo... el número también: ");
+        String jelipeii = felipe.nextLine();
+        for(char tmp : jelipeii.toCharArray())
+        {
+            Character.isDigit(tmp);
+            float jelipeiii = (float)3;
+        }
+        int n;
 
         // Declarar la variable de la serie
         int serie[] = new int[n];
